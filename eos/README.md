@@ -11,13 +11,12 @@ A python wrapper to use the Nuclear EOS driver from http://stellarcollapse.org
 
 ### INSTALLATION ###
 
-1. Download the EOSDriver from [https://stellarcollapse.org/equationofstate](https://stellarcollapse.org/equationofstate)
-2. Edit the ```make.inc``` file
-3. Make sure you have FFLAGS ```-fPIC``` (if you failed to generate f2py code)
-4. Compile the Fortran source codes by ```make```
-5. Generate the python module using f2py (make sure you have eosmodule.mod and nuc_eos.a at the same path with eospy.F90):
+1. Edit the ```make.inc``` file
+2. Make sure you have FFLAGS ```-fPIC``` (if you failed to generate f2py code)
+3. Compile the Fortran source codes by ```make```
+4. Generate the python module using f2py (make sure you have eosmodule.mod and nuc_eos.a at the same path with eospy.F90):
 ``` f2py -m eospy -c eospy.F90 nuc_eos.a -I$HDF5HOME/include -L$HDF5HOME/lib -lhdf5 -lhdf5_fortran -lhdf5 -lz ```
-6. Add ```eospy.so``` and ```NuclearEos.py``` to your python path
+5. Add ```eospy.so``` and ```NuclearEos.py``` to your python path
 
 ### USEAGE ###
 
