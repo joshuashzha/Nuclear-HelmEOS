@@ -5,9 +5,9 @@ A python wrapper to use the Nuclear EOS driver from http://stellarcollapse.org
 
 ### PRE-REQUIREMENTS ###
 
+* fortran hdf5 library (can use MESASDK http://www.astro.wisc.edu/~townsend/static.php?ref=mesasdk)
 * python3
 * f2py3
-* EOSDriver from http://stellarcollapse.org
 
 ### INSTALLATION ###
 
